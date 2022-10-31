@@ -14,6 +14,21 @@ const business = {
 
 class Business extends React.Component {
   render() {
-    
+    return (
+    <div className='Business'>
+    <div className ='image-container'>
+
+    </div>
+    <h2>{business.name}</h2>
+    <div className='Business-information'>
+      <div className='Business-address'>
+
+      </div>
+      <div className='Business-reviews'>
+
+      </div>
+    </div>
+    </div>
+    )
   }
 }
