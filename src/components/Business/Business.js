@@ -1,5 +1,6 @@
 import React from 'react';
-
+import './Business.css';
+export default Business;
 const business = {
   imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
   name: 'MarginOtto Pizzeria',
