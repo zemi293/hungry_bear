@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import BusinessList from '../BusinessList/BusinessList.js'
-import SearchBar from '../SearchBar/SearchBar.js'
+import BusinessList from '../BusinessList/BusinessList'
+import SearchBar from '../SearchBar/SearchBar'
 
 function App() {
   return (
