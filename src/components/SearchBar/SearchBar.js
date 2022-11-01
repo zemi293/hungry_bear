@@ -6,3 +6,9 @@ const sortByOptions = {
     'Highest Rated': 'rating',
     'Most Reviewed': 'review_count'
 }
+
+class SearchBar extends React.Component {
+    renderSortByOptions() {
+        return
+    }
+}
