@@ -1,5 +1,5 @@
 import React from 'react';
-import '.\SearchBar.css';
+import './SearchBar.css';
 
 const sortByOptions = {
     'Best Match': 'best_match',
@@ -15,6 +15,7 @@ class SearchBar extends React.Component {
         })
     }
     render() {
+        return(
         <div className='SearchBar'>
             <div className='SearchBar-sort-options'>
                 <ul>
@@ -29,6 +30,7 @@ class SearchBar extends React.Component {
                 <a>Let's Go</a>
             </div>
         </div>
+        )
     }
 }
 
