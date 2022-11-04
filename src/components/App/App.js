@@ -23,7 +23,7 @@ class App extends React.Component {
       <div className='App'>
         <h1>hungry bear</h1>
         <SearchBar />
-        <BusinessList businesses={businesses}/>
+        <BusinessList businesses={businesses} />
       </div>
     )
   } 
