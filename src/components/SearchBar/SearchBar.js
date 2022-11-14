@@ -38,6 +38,14 @@ class SearchBar extends React.Component {
             </li>)
         })
     }
+
+    handleTermChange(e) {
+
+    }
+
+    handleLocationChange(e) {
+        
+    }
     render() {
         return(
         <div className='SearchBar'>
