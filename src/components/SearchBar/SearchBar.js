@@ -47,6 +47,11 @@ class SearchBar extends React.Component {
     handleLocationChange(e) {
         this.setState({location: e.target.value})
     }
+
+    handleSearch(e) {
+        {this.props.searchYelp(this.state.term, this.state.location, this.state.sortyBy)}
+    }
+
     render() {
         return(
         <div className='SearchBar'>
