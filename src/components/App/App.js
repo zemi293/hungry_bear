@@ -8,10 +8,13 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {businesses: []}
-    this.searchYelp = this.searchYelp.bind(this);
+    this.searchYelp = this.searchYelp.bind(this)
   };
+
   searchYelp(term, location, sortBy) {
-    console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`)
+    Yelp.search(term, location, sortBy).then(businesses => {
+      this.setState({businesses: businesses})
+    })
   }
 
   render() {
