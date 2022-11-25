@@ -31,7 +31,6 @@
   .Business-address {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   
   .Business-reviews {
