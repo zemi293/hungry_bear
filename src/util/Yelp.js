@@ -10,9 +10,21 @@ const Yelp = {
         }).then(jsonResponse => {
             if (jsonResponse.businesses) {
                 return jsonResponse.businesses.map(business => {
-                    
+                    return(
+                        {
+                            id: business.id,
+                            imageSrc: business.image_url,
+                            name: business.name,
+                            address: business.address,
+                            city: business.city,
+                            state: business.state,
+                            zipcode: business.zipcode,
+                        }
+                    )
                 })
             }
-        });
+        })
     }
 };
+
+export default Yelp;
