@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
-import Yelp from '.../util/Yelp';
+import Yelp from '.../src/util/Yelp';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class App extends React.Component {
       <div className='App'>
         <h1>hungry bear</h1>
         <SearchBar searchYelp = {this.searchYelp}/>
-        <BusinessList businesses={businesses} />
+        <BusinessList businesses={this.state.businesses} />
       </div>
     )
   } 
